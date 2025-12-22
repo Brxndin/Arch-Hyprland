@@ -1,0 +1,10 @@
+# Ativa o suporte a Ctrl+C, Ctrl+V, Ctrl+X (recortar), Ctrl+Z (desfazer)
+set bindloguess
+
+# Ativa a seleção de texto usando Shift + Setas
+set softwrap
+set mouse
+
+# Melhora a visualização
+set linenumbers
+set titlecolor white,blue
