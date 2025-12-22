@@ -1,0 +1,88 @@
+# Arch + Hyprland
+
+Dotfiles das customizações que fiz ao usar Arch Linux com o Hyprland.
+
+## Instalação
+
+Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (então a maioria das coisas teve que ser baixada manualmente).
+
+## Observações
+
+Algumas configurações específicas foram feitas por conta da minha GPU ser uma Nvidia RTX 2060 e de eu ter um adaptador WiFi TP-Link.
+O Hyprland não lida tão bem com os drivers desses dois, então são necessárias algumas configurações manuais específicas e alguns pacotes a mais.
+
+## Pacotes Usados
+
+- amd-ucode 20251125-2
+- base 3-2
+- base-devel 1-2
+- bluez 5.85-1
+- bluez-utils 5.85-1
+- btop 1.4.5-1
+- btrfs-progs 6.17.1-1
+- discord 1:0.0.119-1
+- efibootmgr 18-3
+- fastfetch 2.56.0-1
+- ffmpegthumbnailer 2.3.0-1
+- firefox 146.0.1-1
+- git 2.52.0-2
+- grim 1.5.0-2
+- gst-plugin-pipewire 1:1.4.9-2
+- gvfs 1.58.0-2
+- hypridle 0.1.7-6
+- hyprland 0.52.2-2
+- hyprlock 0.9.2-7
+- imagemagick 7.1.2.11-1
+- imv 5.0.1-1
+- iw 6.17-1
+- kitty 0.44.0-1
+- lib32-nvidia-utils 580.119.02-1
+- lib32-vulkan-icd-loader 1.4.335.0-1
+- libpulse 17.0+r98+gb096704c0-1
+- linux 6.18.1.arch1-2
+- linux-firmware 20251125-2
+- linux-headers 6.18.1.arch1-2
+- mako 1.10.0-1
+- mpv 1:0.40.0-7
+- nano 8.7-1
+- networkmanager 1.54.3-1
+- noto-fonts-cjk 20240730-1
+- noto-fonts-emoji 1:2.051-1
+- nvidia-dkms 580.119.02-1
+- nvidia-settings 580.119.02-1
+- nvidia-utils 580.119.02-1
+- nwg-look 1.0.6-1
+- otf-font-awesome 7.1.0-1
+- papirus-icon-theme 20250501-1
+- pavucontrol 1:6.2-1
+- pipewire 1:1.4.9-2
+- pipewire-alsa 1:1.4.9-2
+- pipewire-jack 1:1.4.9-2
+- pipewire-pulse 1:1.4.9-2
+- qt5-wayland 5.15.18+kde+r55-1
+- qt6-wayland 6.10.1-1
+- rtl88x2bu-dkms-git 5.13.1.r212.825556e-1
+- slurp 1.5.0-1
+- speedtest-cli 2.1.3-9
+- spotify 1:1.2.79.425-1
+- steam 1.0.0.85-1
+- swww 0.11.2-1
+- thunar 4.20.6-1
+- thunar-archive-plugin 0.6.0-1
+- thunar-volman 4.20.0-2
+- ttf-jetbrains-mono-nerd 3.4.0-1
+- tumbler 4.20.1-1
+- unzip 6.0-23
+- usbutils 019-1
+- visual-studio-code-bin 1.107.1-1
+- vulkan-icd-loader 1.4.335.0-1
+- waybar 0.14.0-5
+- wireplumber 0.5.12-1
+- wl-clipboard 1:2.2.1-3
+- woff2-font-awesome 7.1.0-1
+- wofi 1.5.1-1
+- xdg-desktop-portal-hyprland 1.3.11-3
+- yay 12.5.7-1
+- yay-debug 12.5.7-1
+- zip 3.0-11
+- zram-generator 1.2.1-1
