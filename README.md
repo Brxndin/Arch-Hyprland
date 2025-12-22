@@ -8,8 +8,9 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 
 ## Observações
 
-Algumas configurações específicas foram feitas por conta da minha GPU ser uma Nvidia RTX 2060 e de eu ter um adaptador WiFi TP-Link.
-O Hyprland não lida tão bem com os drivers desses dois, então são necessárias algumas configurações manuais específicas e alguns pacotes a mais.
+- A estilização foi baseada no Glassmorphism.
+- A maior parte das configurações foi feita pesquisando e usando o Gemini, mas alguns atalhos, escolha do estilo, pacotes e funcionalidades foram pessoais.
+- Algumas configurações específicas foram feitas por conta da minha GPU ser uma Nvidia RTX 2060. O Hyprland não lida tão bem com os drivers, então são necessárias algumas configurações manuais específicas e alguns pacotes a mais.
 
 ## Pacotes Usados
 
