@@ -1,0 +1,59 @@
+{
+    "layer": "top",
+    "position": "top",
+    "mod": "dock",
+    "exclusive": true,
+    "passthrough": false,
+    "gtk-layer-shell": true,
+    "height": 40,
+    "modules-left": ["hyprland/workspaces", "custom/nwglook"],
+    "modules-center": ["hyprland/window"],
+    "modules-right": ["network", "cpu", "memory", "pulseaudio", "clock", "tray"],
+
+    "hyprland/workspaces": {
+        "format": "{name}"
+    },
+
+    "cpu": {
+        "interval": 10,
+        "format": "  {usage}%",
+        "max-length": 10
+    },
+
+    "memory": {
+        "interval": 30,
+        "format": "  {used:0.1f}G",
+        "max-length": 10
+    },
+
+    "custom/nwglook": {
+        "format": "󰗊",
+        "on-click": "nwg-look",
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "format": "{volume}% {icon}",
+        "format-bluetooth": "{volume}% {icon}",
+        "format-muted": "",
+        "format-icons": {
+            "headphone": "",
+            "default": ["", ""]
+        },
+        "on-click": "pavucontrol"
+    },
+
+    "network": {
+        "format-wifi": " {essid} ({signalStrength}%)",
+        "format-disconnected": "⚠ Disconnected"
+    },
+
+    "clock": {
+        "format": "{:%H:%M - %d/%m}"
+    },
+
+    "tray": {
+        "icon-size": 18,
+        "spacing": 10
+    }
+}
