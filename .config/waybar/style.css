@@ -6,7 +6,7 @@
 window#waybar {
     background: rgba(30, 30, 46, 0.8); /* Cinza escuro transparente */
     color: #cdd6f4;
-    border-radius: 12px;
+    /* border-radius: 12px */;
 }
 
 #workspaces button {
