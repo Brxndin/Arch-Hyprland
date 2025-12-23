@@ -1,7 +1,7 @@
 /* Força a transparência no Thunar */
 window.thunar {
     background-color: rgba(30, 30, 46, 0.8);
-    border-radius: 12px;
+    /* border-radius: 12px; */
 }
 
 * {
