@@ -10,8 +10,8 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 
 - A estilização foi baseada no Glassmorphism.
 - Em alguns arquivos os ícones podem parecer bugados pois estou usando a fonte JetBrainsMono Nerd.
-- A maior parte das configurações foi feita pesquisando e usando o Gemini, mas alguns atalhos, escolha do estilo, pacotes e funcionalidades foram pessoais.
-- Algumas configurações específicas foram feitas por conta da minha GPU ser uma Nvidia RTX 2060 e por eu usar um adaptador Wi-Fi TP-Link. O Hyprland não lida tão bem com os drivers, então são necessárias algumas configurações manuais específicas e alguns pacotes a mais.
+- A maior parte das configurações foi feita pesquisando e usando o Gemini, mas alguns atalhos, pacotes, funcionalidades e a escolha do estilo foram pessoais.
+- Algumas configurações e pacotes específicos foram usados por conta da minha GPU ser uma Nvidia RTX 2060 e por eu usar um adaptador Wi-Fi TP-Link. O Hyprland não lida tão bem com os drivers, então são necessárias algumas configurações manuais específicas e alguns pacotes a mais.
 
 ## Pacotes Usados
 
@@ -67,7 +67,7 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - rtl88x2bu-dkms-git 5.13.1.r212.825556e-1
 - slurp 1.5.0-1
 - speedtest-cli 2.1.3-9
-- spotify 1:1.2.79.425-1
+- spotify-launcher 0.6.3-2
 - steam 1.0.0.85-1
 - swww 0.11.2-1
 - thunar 4.20.6-1
