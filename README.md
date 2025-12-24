@@ -9,6 +9,7 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 ## Observações
 
 - A estilização foi baseada no Glassmorphism.
+- Em alguns arquivos os ícones podem parecer bugados pois estou usando a fonte JetBrainsMono Nerd.
 - A maior parte das configurações foi feita pesquisando e usando o Gemini, mas alguns atalhos, escolha do estilo, pacotes e funcionalidades foram pessoais.
 - Algumas configurações específicas foram feitas por conta da minha GPU ser uma Nvidia RTX 2060 e por eu usar um adaptador Wi-Fi TP-Link. O Hyprland não lida tão bem com os drivers, então são necessárias algumas configurações manuais específicas e alguns pacotes a mais.
 
@@ -21,6 +22,7 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - bluez-utils 5.85-1
 - btop 1.4.5-1
 - btrfs-progs 6.17.1-1
+- code 1.107.0-1
 - discord 1:0.0.119-1
 - efibootmgr 18-3
 - fastfetch 2.56.0-1
@@ -75,7 +77,6 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - tumbler 4.20.1-1
 - unzip 6.0-23
 - usbutils 019-1
-- visual-studio-code-bin 1.107.1-1
 - vulkan-icd-loader 1.4.335.0-1
 - waybar 0.14.0-5
 - wireplumber 0.5.12-1
@@ -85,5 +86,6 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - xdg-desktop-portal-hyprland 1.3.11-3
 - yay 12.5.7-1
 - yay-debug 12.5.7-1
+- zed 0.217.3-1
 - zip 3.0-11
 - zram-generator 1.2.1-1
