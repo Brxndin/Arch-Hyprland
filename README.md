@@ -18,6 +18,7 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - amd-ucode 20251125-2
 - base 3-2
 - base-devel 1-2
+- blueman 2.4.6-1
 - bluez 5.85-1
 - bluez-utils 5.85-1
 - btop 1.4.5-1
@@ -48,6 +49,8 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - mako 1.10.0-1
 - mpv 1:0.40.0-7
 - nano 8.7-1
+- neovim 0.11.5-1
+- network-manager-applet 1.36.0-1
 - networkmanager 1.54.3-1
 - noto-fonts-cjk 20240730-1
 - noto-fonts-emoji 1:2.051-1
@@ -62,6 +65,7 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - pipewire-alsa 1:1.4.9-2
 - pipewire-jack 1:1.4.9-2
 - pipewire-pulse 1:1.4.9-2
+- python-pywal 3.3.0-10
 - qt5-wayland 5.15.18+kde+r55-1
 - qt6-wayland 6.10.1-1
 - rtl88x2bu-dkms-git 5.13.1.r212.825556e-1
@@ -85,7 +89,7 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - wofi 1.5.1-1
 - xdg-desktop-portal-hyprland 1.3.11-3
 - yay 12.5.7-1
-- yay-debug 12.5.7-1
+- yazi 25.5.31-2
 - zed 0.217.3-1
 - zip 3.0-11
 - zram-generator 1.2.1-1
