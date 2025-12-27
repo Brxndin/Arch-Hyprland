@@ -1,15 +1,16 @@
+/* Importando as cores do Pywal */
+@import "../../.cache/wal/colors-waybar.css";
+
 * {
     border: none;
-    border-radius: 0px; /* Garante que tudo seja quadrado conforme sua preferência  */
-    font-family: "JetBrainsMono Nerd Font"; /*  */
+    border-radius: 0px;
+    font-family: "JetBrainsMono Nerd Font";
 }
 
-/* Fundo da barra principal invisível para destacar os blocos */
 window#waybar {
     background-color: transparent;
 }
 
-/* Estilização dos blocos individuais (Pílulas Quadradas) */
 #custom-nwglook,
 #workspaces,
 #window,
@@ -19,40 +20,34 @@ window#waybar {
 #pulseaudio,
 #clock,
 #tray {
-    background-color: rgba(30, 30, 46, 0.8); /* Cinza Escuro Transparente  */
-    color: #cdd6f4; /* Texto claro suave  */
+    background-color: rgba(30, 30, 46, 0.8); 
+    color: @foreground;
     padding: 0px 15px;
-    margin: 5px 0px; /* Margem vertical para não tocar no topo da tela */
+    margin: 5px 0px;
 }
 
-/* Ajuste das Workspaces para alinhar as bolinhas */
 #workspaces {
     padding: 0px 5px;
 }
 
 #workspaces button {
     padding: 0px 8px;
-    color: #89b4fa; /* Azul claro  */
-    /* Removido o border-bottom para evitar desalinhamento vertical */
+    color: @color4;
 }
 
 #workspaces button.active {
-    background-color: rgba(137, 180, 250, 0.2); /* Destaque sutil no fundo da bolinha ativa */
+    background-color: @color4; 
+    color: @background;
 }
 
-/* Ícone do Arch (nwglook) */
 #custom-nwglook {
-    color: #89b4fa; /*  */
+    color: @color4;
     font-size: 16px;
+    margin-left: 10px;
 }
 
-/* Relógio em destaque */
 #clock {
-    color: #89b4fa; /*  */
+    color: @color4;
     font-weight: bold;
-}
-
-/* Margem extra para o Tray não ficar colado na borda da tela */
-#tray {
     margin-right: 10px;
 }
