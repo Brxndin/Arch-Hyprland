@@ -16,6 +16,6 @@ while true; do
     # faz isso para atualizar as cores dinamicamente
     killall waybar && waybar &
     
-    # Espera 30 minutos (1800 segundos) antes de mudar de novo
-    sleep 1800
+    # Espera 10 minutos (600 segundos) antes de mudar de novo
+    sleep 600
 done
