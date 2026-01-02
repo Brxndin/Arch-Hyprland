@@ -21,7 +21,7 @@ window#waybar {
 #clock,
 #tray {
     background-color: rgba(30, 30, 46, 0.8); 
-    color: @foreground;
+    color: @color4;
     padding: 0px 15px;
     margin: 5px 0px;
 }
@@ -41,13 +41,11 @@ window#waybar {
 }
 
 #custom-nwglook {
-    color: @color4;
     font-size: 16px;
     margin-left: 10px;
 }
 
 #clock {
-    color: @color4;
     font-weight: bold;
     margin-right: 10px;
 }
