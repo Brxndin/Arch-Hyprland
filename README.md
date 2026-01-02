@@ -88,7 +88,6 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - waybar 0.14.0-5
 - wireplumber 0.5.13-1
 - wl-clipboard 1:2.2.1-3
-- woff2-font-awesome 7.1.0-1
 - wofi 1.5.1-1
 - xdg-desktop-portal-hyprland 1.3.11-3
 - yay 12.5.7-1
