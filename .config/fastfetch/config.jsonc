@@ -32,10 +32,10 @@
     "colors"
   ],
   "logo": {
-    "source": "/home/SEU_USUARIO/wallpapers/wallpaper_kitty.jpg",
+    "source": "/home/SEU_USUARIO/wallpapers/kitty_wallpaper.jpg",
     "type": "kitty",
     "height": 15,
-    "width": 30,
+    "width": 33,
     "padding": {
         "top": 2,
         "left": 2
