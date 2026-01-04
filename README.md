@@ -23,6 +23,7 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - bluez-utils 5.85-1
 - btop 1.4.6-1
 - btrfs-progs 6.17.1-1
+- cliphist 1:0.7.0-1
 - code 1.107.1-1
 - discord 1:0.0.119-1
 - efibootmgr 18-3
@@ -40,6 +41,7 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - imv 5.0.1-1
 - iw 6.17-1
 - kitty 0.44.0-1
+- kvantum 1.1.5-1
 - lib32-nvidia-utils 590.48.01-1
 - lib32-vulkan-icd-loader 1.4.335.0-1
 - libpulse 17.0+r98+gb096704c0-1
@@ -69,12 +71,14 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - python-pywal 3.3.0-10
 - qt5-wayland 5.15.18+kde+r55-1
 - qt6-wayland 6.10.1-1
+- qt6ct 0.11-3
 - rtl88x2bu-dkms-git 5.13.1.r212.825556e-1
 - slurp 1.5.0-1
 - snap-pac 3.0.1-3
 - snapper 0.13.0-2
 - speedtest-cli 2.1.3-9
 - spotify-launcher 0.6.4-1
+- starship 1.24.2-1
 - steam 1.0.0.85-1
 - swww 0.11.2-1
 - thunar 4.20.6-1
@@ -88,6 +92,7 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - waybar 0.14.0-5
 - wireplumber 0.5.13-1
 - wl-clipboard 1:2.2.1-3
+- wob 0.16-2
 - wofi 1.5.1-1
 - xdg-desktop-portal-hyprland 1.3.11-3
 - yay 12.5.7-1
@@ -95,3 +100,4 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - zed 0.217.3-1
 - zip 3.0-11
 - zram-generator 1.2.1-1
+- zsh 5.9-5
