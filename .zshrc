@@ -1,5 +1,4 @@
 # --- VARIÁVEIS DE AMBIENTE ---
-export MOZ_ENABLE_WAYLAND=1
 export TERMINAL=kitty
 export EDITOR=nvim
 
