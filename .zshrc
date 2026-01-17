@@ -14,13 +14,24 @@ alias grep='grep --color=auto'
 # Sempre que limpar, recria o fastfetch
 clear() {
     command clear
-    fastfetch
+
+    # Só inicia o fastfetch se NÃO estiver no terminal do Code OSS
+    if [ "$TERM_PROGRAM" != "vscode" ]; then
+        fastfetch
+    fi
 }
 
 # --- INICIALIZAÇÃO ---
 
-# Inicia o Fastfetch assim que abre o terminal
-fastfetch
+# Só inicia o fastfetch se NÃO estiver no terminal do Code OSS
+if [ "$TERM_PROGRAM" != "vscode" ]; then
+    fastfetch
+fi
 
-# Inicia o Starship
-eval "$(starship init zsh)"
+# Só inicia o starship se NÃO for um TTY
+if [ "$TERM" != "linux" ]; then
+    eval "$(starship init zsh)"
+else
+    # Prompt simples para o TTY (evita o archlinux%)
+    export PROMPT='%F{blue}%n%f@%F{green}%m%f:%F{cyan}%~%f$ '
+fi
