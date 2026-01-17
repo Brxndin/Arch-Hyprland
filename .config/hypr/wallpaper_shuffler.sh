@@ -12,10 +12,10 @@ while true; do
     # pega o esquema de cores com o pywal
     wal -i "$IMG" -n
 
-    # Recarrega a Waybar (mata a antiga e inicia uma nova)
+    # Recarrega a Waybar (força o css mudar)
     # faz isso para atualizar as cores dinamicamente
-    killall waybar && waybar &
-    
+    killall -SIGUSR2 waybar
+
     # Espera 10 minutos (600 segundos) antes de mudar de novo
     sleep 600
 done
