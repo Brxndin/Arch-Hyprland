@@ -1,0 +1,108 @@
+configuration {
+    modi: "drun,run";
+    show-icons: true;
+    display-drun: " ";
+    display-run: " ";
+    drun-display-format: "{name}";
+    font: "JetBrainsMono Nerd Font 12";
+    icon-theme: "Papirus-Dark";
+}
+
+/* Importa as cores geradas pelo Pywal */
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+* {
+    background-color: transparent;
+    bg-temp: rgba(30, 30, 46, 0.9);
+    
+    main-bg: @background;
+    main-fg: @foreground;
+    
+    select-bg: @color2; 
+    select-fg: @background;
+    accent: @color4;
+}
+
+window {
+    transparency: "real";
+    location: center;
+    anchor: center;
+    width: 600px;
+    enabled: true;
+    border: 2px solid;
+    border-color: @accent;
+    background-color: @bg-temp;
+}
+
+mainbox {
+    enabled: true;
+    spacing: 0px;
+    background-color: transparent;
+    children: [ "inputbar", "listview" ];
+}
+
+inputbar {
+    enabled: true;
+    spacing: 10px;
+    padding: 20px;
+    background-color: transparent;
+    text-color: @main-fg;
+    children: [ "prompt", "entry" ];
+}
+
+prompt {
+    enabled: true;
+    background-color: @accent;
+    padding: 10px;
+    text-color: #ffffff;
+    font: "JetBrainsMono Nerd Font Bold 12";
+}
+
+entry {
+    enabled: true;
+    padding: 10px;
+    background-color: @color8;
+    text-color: @main-fg;
+    cursor: text;
+    placeholder: "Pesquisar";
+    placeholder-color: inherit;
+}
+
+listview {
+    enabled: true;
+    columns: 1;
+    lines: 8;
+    cycle: true;
+    dynamic: true;
+    scrollbar: false;
+    layout: vertical;
+    spacing: 5px;
+    padding: 10px;
+    background-color: transparent;
+}
+
+element {
+    enabled: true;
+    spacing: 15px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: transparent;
+    text-color: @main-fg;
+}
+
+element selected.normal {
+    background-color: inherit;
+    text-color: #ffffff;
+}
+
+element-icon {
+    background-color: transparent;
+    size: 40px;
+    cursor: inherit;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
