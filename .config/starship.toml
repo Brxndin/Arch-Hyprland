@@ -1,5 +1,6 @@
-# Define a ordem e o formato dos módulos
+# Define a ordem e o formato dos módulos com suporte a multi-linha e conectores
 format = """
+[┌─](fg:#313244)\
 [░▒▓](#313244)\
 [  ](bg:#313244 fg:#89b4fa)\
 [](fg:#313244 bg:#45475a)\
@@ -8,6 +9,8 @@ $directory\
 $git_branch\
 $git_status\
 [](fg:#585b70 bg:#1e1e2e)\
+$cmd_duration
+[└─](fg:#313244)\
 $character"""
 
 [directory]
@@ -32,4 +35,4 @@ error_symbol = "[ ➜ ](bold fg:#f38ba8)"
 [cmd_duration]
 min_time = 500
 style = "fg:#f9e2af"
-format = "at [$duration]($style) "
+format = " levou [$duration]($style) "
