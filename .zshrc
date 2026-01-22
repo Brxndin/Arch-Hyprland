@@ -15,16 +15,16 @@ alias grep='grep --color=auto'
 clear() {
     command clear
 
-    # Só inicia o fastfetch se NÃO estiver no terminal do Code OSS
-    if [ "$TERM_PROGRAM" != "vscode" ]; then
+    # Só inicia o fastfetch se NÃO estiver no terminal do Code OSS ou Zed
+    if [ "$TERM_PROGRAM" != "vscode" ] && [ "$TERM_PROGRAM" != "zed" ]; then
         fastfetch
     fi
 }
 
 # --- INICIALIZAÇÃO ---
 
-# Só inicia o fastfetch se NÃO estiver no terminal do Code OSS
-if [ "$TERM_PROGRAM" != "vscode" ]; then
+# Só inicia o fastfetch se NÃO estiver no terminal do Code OSS ou Zed
+if [ "$TERM_PROGRAM" != "vscode" ] && [ "$TERM_PROGRAM" != "zed" ]; then
     fastfetch
 fi
 
