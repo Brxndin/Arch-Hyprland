@@ -8,8 +8,14 @@ SAVEHIST=10000
 setopt APPEND_HISTORY
 
 # --- ALIASES E FUNÇÕES ---
-alias ls='ls --color=auto'
 alias grep='grep --color=auto'
+
+# alias para o eza (substituindo o ls padrão)
+alias ls='eza --icons --grid --group-directories-first'
+alias ll='eza --icons --long --group-directories-first --git'
+
+# alias para o bat (substituindo o cat padrão)
+alias cat='bat --style=plain --paging=never'
 
 # Sempre que limpar, recria o fastfetch
 clear() {
