@@ -51,7 +51,7 @@
             "headphone": "",
             "default": ["", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click": "hyprpwcenter"
     },
 
     "network": {
