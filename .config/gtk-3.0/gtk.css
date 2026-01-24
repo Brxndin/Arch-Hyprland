@@ -1,4 +1,3 @@
-/* Forçar transparência no Thunar */
 window.thunar {
     background-color: rgba(30, 30, 46, 0.8);
 }
@@ -7,20 +6,17 @@ window.thunar {
     font-family: "JetBrainsMono Nerd Font";
 }
 
-/* Forçar o fundo escuro em todas as áreas do Thunar */
 .thunar, thunar-window, .standard-view, .sidebar {
     background-color: rgba(30, 30, 46, 0.8) !important;
     color: #cdd6f4 !important;
 }
 
-/* Melhorar legibilidade da barra de menus e texto superior */
 menubar, toolbar, label {
     color: #cdd6f4 !important;
     text-shadow: none;
     -gtk-icon-shadow: none;
 }
 
-/* Cor de destaque nas bordas e seleção */
 selection {
     background-color: #89b4fa !important;
     color: #1e1e2e !important;
