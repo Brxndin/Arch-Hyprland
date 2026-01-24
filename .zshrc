@@ -15,7 +15,7 @@ alias ls='eza --icons --grid --group-directories-first'
 alias ll='eza --icons --long --group-directories-first --git'
 
 # alias para o bat (substituindo o cat padrão)
-alias cat='bat --style=plain --paging=never'
+alias cat='bat --paging=never'
 
 # Sempre que limpar, recria o fastfetch
 clear() {
