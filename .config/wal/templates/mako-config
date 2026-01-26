@@ -1,4 +1,3 @@
-# aqui vai seguir a mesma estrutura definida no template do pywal
 max-history=100
 sort=-time
 

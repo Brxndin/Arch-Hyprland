@@ -12,7 +12,11 @@ while true; do
     # pega o esquema de cores com o pywal
     wal -i "$IMG" -n
 
-    # Recarrega a Waybar (força o css mudar)
+    # Atualiza o Mako através de template do pywal
+    cp "$HOME/.cache/wal/mako-config" "$HOME/.config/mako/config"
+    makoctl reload
+
+    # Recarrega o CSS da Waybar
     # faz isso para atualizar as cores dinamicamente
     killall -SIGUSR2 waybar
 
