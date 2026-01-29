@@ -1,0 +1,11 @@
+* {{
+    background: {background};
+    foreground: {foreground};
+    accent:     {color4};
+    selected:   {color2};
+    urgent:     {color1};
+
+    bg-window: rgba({background.rgb}, 0.6);
+    bg-item:   rgba({foreground.rgb}, 0.1);
+    bg-sel:    rgba({color2.rgb}, 0.8);
+}}
