@@ -1,14 +1,14 @@
 # Define a ordem e o formato dos módulos com suporte a multi-linha e conectores
 format = """
 [┌─](fg:#313244)\
-[░▒▓](#313244)\
-[  ](bg:#313244 fg:#89b4fa)\
+[░▒▓](fg:#313244)\
+[  ](bg:#313244 fg:#cdd6f4)\
 [](fg:#313244 bg:#45475a)\
 $directory\
 [](fg:#45475a bg:#585b70)\
 $git_branch\
 $git_status\
-[](fg:#585b70 bg:#1e1e2e)\
+[](fg:#585b70)\
 $cmd_duration
 [└─](fg:#313244)\
 $character"""
@@ -29,7 +29,7 @@ style = "bg:#585b70 fg:#cdd6f4"
 format = "[($all_status$ahead_behind)]($style)"
 
 [character]
-success_symbol = "[ ➜ ](bold fg:#89b4fa)"
+success_symbol = "[ ➜ ](bold fg:#cdd6f4)"
 error_symbol = "[ ➜ ](bold fg:#f38ba8)"
 
 [cmd_duration]
