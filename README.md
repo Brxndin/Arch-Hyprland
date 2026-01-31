@@ -36,7 +36,7 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - eza 0.23.4-1
 - fastfetch 2.58.0-1
 - ffmpegthumbnailer 2.3.0-1
-- firefox 147.0.1-1
+- firefox 147.0.2-1
 - git 2.52.0-2
 - grim 1.5.0-2
 - gst-plugin-pipewire 1:1.4.10-1
@@ -55,13 +55,13 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - lib32-vulkan-icd-loader 1.4.335.0-1
 - libpulse 17.0+r98+gb096704c0-1
 - libreoffice-fresh 25.8.4-3
-- linux 6.18.6.arch1-1
+- linux 6.18.7.arch1-1
 - linux-firmware 20260110-1
-- linux-headers 6.18.6.arch1-1
+- linux-headers 6.18.7.arch1-1
 - mako 1.10.0-1
 - mpv 1:0.41.0-2
 - nano 8.7-1
-- neovim 0.11.5-1
+- neovim 0.11.6-1
 - network-manager-applet 1.36.0-1
 - networkmanager 1.54.3-1
 - noto-fonts-cjk 20240730-1
@@ -81,8 +81,8 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - pipewire-pulse 1:1.4.10-1
 - python-pywal 3.3.0-11
 - qt5-wayland 5.15.18+kde+r55-1
-- qt6-wayland 6.10.1-1
-- qt6ct 0.11-3
+- qt6-wayland 6.10.2-1
+- qt6ct 0.11-4
 - rofi 2.0.0-1
 - rtl88x2bu-dkms-git 5.13.1.r212.825556e-1
 - slurp 1.5.0-1
@@ -108,7 +108,7 @@ Usei `archinstall` com NetworkManager, btrfs, systemd-boot e type Minimal (entã
 - xdg-desktop-portal-hyprland 1.3.11-3
 - yay 12.5.7-1
 - yazi 26.1.22-1
-- zed 0.220.6-1
+- zed 0.221.5-1
 - zip 3.0-11
 - zram-generator 1.2.1-1
 - zsh 5.9-5
