@@ -1,4 +1,4 @@
-/* Importando as cores do Pywal */
+/* importa as cores do Pywal */
 @import "../../.cache/wal/colors-waybar.css";
 
 * {
@@ -8,7 +8,9 @@
 }
 
 window#waybar {
-    background-color: transparent;
+    background-color: rgba(30, 30, 46, 0.8);
+    color: @color4;
+    border-bottom: 2px solid @color4; 
 }
 
 #custom-nwglook,
@@ -20,14 +22,15 @@ window#waybar {
 #pulseaudio,
 #clock,
 #tray {
-    background-color: rgba(30, 30, 46, 0.8); 
+    background-color: transparent;
     color: @color4;
     padding: 0px 15px;
-    margin: 5px 0px;
+    margin: 0px;
 }
 
 #workspaces {
     padding: 0px 5px;
+    padding-left: 20px;
 }
 
 #workspaces button {
@@ -42,10 +45,10 @@ window#waybar {
 
 #custom-nwglook {
     font-size: 16px;
-    margin-left: 10px;
+    padding-left: 20px;
 }
 
 #clock {
     font-weight: bold;
-    margin-right: 10px;
+    padding-right: 20px;
 }

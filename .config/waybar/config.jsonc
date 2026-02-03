@@ -3,16 +3,27 @@
     "position": "top",
     "mod": "dock",
     "height": 40,
-    "spacing": 10,
-    "modules-left": ["custom/nwglook", "hyprland/workspaces"],
+    "spacing": 0,
+    // "modules-left": ["custom/nwglook", "hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["cpu", "memory", "tray", "pulseaudio", "clock"],
-    
+    "modules-right": ["network", "cpu", "memory", "tray", "pulseaudio", "clock"],
+
     "hyprland/workspaces": {
         "format": "{icon}",
         "on-click": "activate",
         "format-icons": {
-            "active": "",
+            "1": "一",
+            "2": "二",
+            "3": "三",
+            "4": "四",
+            "5": "五",
+            "6": "六",
+            "7": "七",
+            "8": "八",
+            "9": "九",
+            "10": "十",
+            // "active": "",
             "default": "",
             "urgent": ""
         },
@@ -22,7 +33,14 @@
     },
 
     "hyprland/window": {
-        "max-length": 50
+        "max-length": 50,
+        "separate-outputs": true,
+        "format": "{}",
+        "rewrite": {
+            // Se o título estiver vazio, exibe texto padrão
+            // "^$": "Arch Linux | Hyprland"
+            "^$": ""
+        }
     },
 
     "cpu": {
