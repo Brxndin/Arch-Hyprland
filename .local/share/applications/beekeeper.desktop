@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=Beekeeper Studio
+Type=Application
+Exec=/home/SEU_USUARIO/AppImages/Beekeeper-Studio.AppImage --enable-features=UseOzonePlatform --ozone-platform=wayland
+Icon=/home/SEU_USUARIO/AppImages/icons/beekeeper-studio.png
+Terminal=false
+Categories=Development;
