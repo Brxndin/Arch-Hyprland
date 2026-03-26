@@ -14,7 +14,7 @@ while true; do
     IMG=$(find "$DIR" -type f | shuf -n 1)
     
     # aplica a imagem com uma transição legal
-    swww img "$IMG" --transition-type grow --transition-duration 2
+    awww img "$IMG" --transition-type grow --transition-duration 2
     
     # pega o esquema de cores com o pywal
     wal -i "$IMG" -n
