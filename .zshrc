@@ -19,7 +19,7 @@ alias cat='bat --paging=never'
 
 # Sempre que limpar, recria o fastfetch
 clear() {
-    command clear
+    command clear && printf '\e[3J'
 
     # Só inicia o fastfetch se NÃO estiver no terminal do Code OSS ou Zed
     if [ "$TERM_PROGRAM" != "vscode" ] && [ "$TERM_PROGRAM" != "zed" ]; then
