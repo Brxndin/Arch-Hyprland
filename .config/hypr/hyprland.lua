@@ -138,10 +138,8 @@ local mainMod = "SUPER"
 
 hl.bind(mainMod .. " + Q", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + C", hl.dsp.window.close())
-hl.bind(mainMod .. " + M", hl.dsp.exit())
--- verificar se funciona
--- basicamente mata os script que foram acionados no autostart
--- hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("pkill -f wallpaper_shuffler.sh; pkill -f awww-daemon; hyprctl dispatch exit"))
+-- hl.bind(mainMod .. " + M", hl.dsp.exit())
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("~/.config/hypr/exit_hyprland.sh"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("thunar"))
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 -- hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("hyprctl dispatch centerwindow"))
