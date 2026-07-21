@@ -51,21 +51,12 @@ hl.on("hyprland.start", function ()
     hl.exec_cmd("sleep 10 && ~/.config/hypr/check_updates.sh &")
 end)
 
--- IMPORTANDO CORES DO PYWAL
+-- CONFIGURAÇÕES DE JANELAS
 
--- Carrega o arquivo gerado pelo Pywal
-local colors = dofile(os.getenv("HOME") .. "/.cache/wal/colors-hyprland.lua")
+-- Carrega configuração de bordas
+dofile(os.getenv("HOME") .. "/.config/hypr/configuracoes_bordas_janelas.lua")
 
 hl.config({
-    general = {
-        border_size = 2,
-        col = {
-            -- Agora você usa a tabela 'colors' para puxar a cor exata
-            active_border = colors.color4 .. "ee",
-            inactive_border = colors.color0 .. "aa",
-        },
-    },
-
     dwindle = {
         preserve_split = true,
     },

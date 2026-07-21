@@ -19,6 +19,9 @@ while true; do
     # pega o esquema de cores com o pywal
     wal -i "$IMG" -n
 
+    # atualiza as cores no script Lua do Hyprland pois ele não atualiza automaticamente
+    hyprctl eval "$(cat $HOME/.config/hypr/configuracoes_bordas_janelas.lua)"
+
     # atualiza o Mako através de template do pywal
     # verifica se o arquivo existe antes de copiar para evitar erros
     if [ -f "$HOME/.cache/wal/mako-config" ]; then
