@@ -3,26 +3,40 @@
 # script que, ao ser ativado, serve para remover as animações e blur, melhorando a performance para jogos
 
 # verifica se o blur está ativado (indica modo normal)
-HYPRGAMEMODE=$(hyprctl getoption decoration:blur:enabled | awk 'NR==1{print $2}')
+GAMEMODE=$(hyprctl getoption decoration:blur:enabled | grep 'bool: true')
 
-if [ "$HYPRGAMEMODE" = 1 ] ; then
+if [ ! -z "$GAMEMODE" ] ; then
     # ATIVANDO GAME MODE
 
     # cria o arquivo de trava
     touch /tmp/gamemode_active
-    
+
     # notificação
     notify-send "Gamemode" "Ativado: Efeitos visuais desligados" -i input-gaming
 
-    hyprctl --batch "\
-        keyword decoration:blur:enabled 0;\
-        keyword decoration:drop_shadow 0;\
-        keyword decoration:rounding 0;\
-        keyword decoration:active_opacity 1.0;\
-        keyword decoration:inactive_opacity 1.0;\
-        keyword layerrule \"unset, waybar\";\
-        keyword layerrule \"unset, rofi\";\
-        keyword animations:enabled 0"
+    # Desativa os efeitos do hyprland e das layers (waybar e rofi) com código Lua
+    hyprctl eval '
+        hl.config({
+            decoration = {
+                rounding = 0,
+                active_opacity = 1.0,
+                inactive_opacity = 1.0,
+                drop_shadow = false,
+                shadow = {
+                    enabled = false
+                },
+                blur = {
+                    enabled = false
+                }
+            },
+            animations = {
+                enabled = false
+            }
+        })
+
+        hl.layer_rule({ name = "waybar-blur", match = { namespace = "waybar" }, blur = false })
+        hl.layer_rule({ name = "rofi-blur", match = { namespace = "rofi" }, blur = false })
+    '
     exit
 fi
 
