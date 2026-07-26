@@ -6,8 +6,8 @@ FILE=~/screenshots/$(date +'%Y-%m-%d_%Hh%Mm%Ss')_screenshot.png
 
 # só salva se não for cancelado
 if grim -g "$(slurp)" "$FILE"; then
-    # abre a imagem no Drawing para edição
-    drawing "$FILE" &
+    # abre a imagem no Swappy para edição
+    swappy -f "$FILE" -o "$FILE" &
     
     # Envia a notificação
     notify-send -a "Sistema" "Screenshot Salva" "Imagem salva em ~/screenshots" -i "$FILE"
