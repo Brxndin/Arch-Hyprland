@@ -1,6 +1,7 @@
 # --- VARIÁVEIS DE AMBIENTE ---
 export TERMINAL=kitty
 export EDITOR=nvim
+export PATH="$HOME/.cargo/bin:$PATH"
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
