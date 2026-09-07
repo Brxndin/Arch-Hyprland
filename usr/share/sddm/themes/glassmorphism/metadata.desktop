@@ -1,0 +1,11 @@
+[SddmGreeterTheme]
+Name=Glassmorphism
+Description=Tema minimalista focado no estilo do Hyprland
+Author=Brandon
+Copyright=(c) 2026, Brandon
+License=GPL
+Type=sddm-theme
+Version=1.0
+MainScript=Main.qml
+ConfigFile=theme.conf
+QtVersion=6
