@@ -148,6 +148,7 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit"))
 hl.bind(mainMod .. " + G", hl.dsp.exec_cmd("~/.config/hypr/gamemode.sh"))
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("cliphist list | rofi -dmenu -p '󰆏' | cliphist decode | wl-copy"))
+hl.bind(mainMod .. " + X", hl.dsp.exec_cmd("~/.config/rofi/powermenu.sh"))
 
 -- Atalho do Print
 hl.bind("Print", hl.dsp.exec_cmd("~/.config/hypr/screenshot.sh"))

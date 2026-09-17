@@ -1,0 +1,53 @@
+configuration {
+    show-icons: false;
+}
+
+@import "~/.cache/wal/colors-rofi.rasi"
+
+window {
+    transparency: "real";
+    background-color: @bg-window;
+    text-color: @accent;
+    border-radius: 0px;
+    width: 770px;
+    location: center;
+    x-offset: 0;
+    y-offset: 0;
+    border: 2px solid;
+    border-color: @accent;
+}
+
+mainbox {
+    background-color: transparent;
+    children: [ listview ];
+    padding: 20px;
+}
+
+listview {
+    background-color: transparent;
+    layout: horizontal;
+    spacing: 20px;
+    lines: 5;
+}
+
+element {
+    background-color: transparent;
+    text-color: @accent;
+    padding: 20px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+element selected {
+    background-color: @accent;
+    text-color: @background;
+}
+
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+    font: "JetBrainsMono Nerd Font 36";
+    horizontal-align: 0.5;
+    vertical-align: 0.5;
+    cursor: inherit;
+}
