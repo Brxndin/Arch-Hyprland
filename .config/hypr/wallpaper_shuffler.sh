@@ -29,6 +29,13 @@ while true; do
         makoctl reload
     fi
 
+    # atualiza o Cava através de template do pywal
+    # verifica se o arquivo existe antes de copiar para evitar erros
+    if [ -f "$HOME/.cache/wal/cava-colors" ]; then
+        cp "$HOME/.cache/wal/cava-colors" "$HOME/.config/cava/config"
+        pkill -USR2 cava
+    fi
+
     # recarrega o CSS da Waybar
     # para atualizar as cores dinamicamente
     killall -SIGUSR2 waybar
